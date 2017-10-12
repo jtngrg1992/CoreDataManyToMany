@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13240" systemVersion="" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CBuilding" representedClassName="CBuilding" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="job" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="floors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CFloor" inverseName="building" inverseEntity="CFloor" syncable="YES"/>
+    </entity>
+    <entity name="CFloor" representedClassName="CFloor" syncable="YES">
+        <attribute name="id" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="job" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="building" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CBuilding" inverseName="floors" inverseEntity="CBuilding" syncable="YES"/>
+        <relationship name="units" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CUnit" inverseName="floors" inverseEntity="CUnit" syncable="YES"/>
+    </entity>
+    <entity name="CUnit" representedClassName="CUnit" syncable="YES">
+        <attribute name="job" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="labelID" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="labelName" attributeType="String" syncable="YES"/>
+        <attribute name="typeID" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="typeName" attributeType="String" syncable="YES"/>
+        <relationship name="floors" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CFloor" inverseName="units" inverseEntity="CFloor" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CBuilding" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="CFloor" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="CUnit" positionX="-36" positionY="45" width="128" height="135"/>
+    </elements>
+</model>

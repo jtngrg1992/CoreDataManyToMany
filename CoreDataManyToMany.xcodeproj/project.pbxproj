@@ -12,6 +12,14 @@
 		13034FB91F8FE7460040EA76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13034FB71F8FE7460040EA76 /* Main.storyboard */; };
 		13034FBB1F8FE7460040EA76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13034FBA1F8FE7460040EA76 /* Assets.xcassets */; };
 		13034FBE1F8FE7460040EA76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13034FBC1F8FE7460040EA76 /* LaunchScreen.storyboard */; };
+		13034FC71F8FE78D0040EA76 /* MeasureDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 13034FC51F8FE78D0040EA76 /* MeasureDataModel.xcdatamodeld */; };
+		13034FC91F8FE8240040EA76 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13034FC81F8FE8240040EA76 /* CoreDataManager.swift */; };
+		13034FDC1F8FFD5C0040EA76 /* CBuilding+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13034FD61F8FFD5C0040EA76 /* CBuilding+CoreDataClass.swift */; };
+		13034FDD1F8FFD5C0040EA76 /* CBuilding+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13034FD71F8FFD5C0040EA76 /* CBuilding+CoreDataProperties.swift */; };
+		13034FDE1F8FFD5C0040EA76 /* CFloor+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13034FD81F8FFD5C0040EA76 /* CFloor+CoreDataClass.swift */; };
+		13034FDF1F8FFD5C0040EA76 /* CFloor+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13034FD91F8FFD5C0040EA76 /* CFloor+CoreDataProperties.swift */; };
+		13034FE01F8FFD5C0040EA76 /* CUnit+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13034FDA1F8FFD5C0040EA76 /* CUnit+CoreDataClass.swift */; };
+		13034FE11F8FFD5C0040EA76 /* CUnit+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13034FDB1F8FFD5C0040EA76 /* CUnit+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		13034FBA1F8FE7460040EA76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13034FBD1F8FE7460040EA76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13034FBF1F8FE7460040EA76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13034FC61F8FE78D0040EA76 /* MeasureDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MeasureDataModel.xcdatamodel; sourceTree = "<group>"; };
+		13034FC81F8FE8240040EA76 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		13034FD61F8FFD5C0040EA76 /* CBuilding+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CBuilding+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13034FD71F8FFD5C0040EA76 /* CBuilding+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CBuilding+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		13034FD81F8FFD5C0040EA76 /* CFloor+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CFloor+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13034FD91F8FFD5C0040EA76 /* CFloor+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CFloor+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		13034FDA1F8FFD5C0040EA76 /* CUnit+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CUnit+CoreDataClass.swift"; sourceTree = "<group>"; };
+		13034FDB1F8FFD5C0040EA76 /* CUnit+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CUnit+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,13 @@
 		13034FA71F8FE7460040EA76 = {
 			isa = PBXGroup;
 			children = (
+				13034FD61F8FFD5C0040EA76 /* CBuilding+CoreDataClass.swift */,
+				13034FD71F8FFD5C0040EA76 /* CBuilding+CoreDataProperties.swift */,
+				13034FD81F8FFD5C0040EA76 /* CFloor+CoreDataClass.swift */,
+				13034FD91F8FFD5C0040EA76 /* CFloor+CoreDataProperties.swift */,
+				13034FDA1F8FFD5C0040EA76 /* CUnit+CoreDataClass.swift */,
+				13034FDB1F8FFD5C0040EA76 /* CUnit+CoreDataProperties.swift */,
+				13034FC51F8FE78D0040EA76 /* MeasureDataModel.xcdatamodeld */,
 				13034FB21F8FE7460040EA76 /* CoreDataManyToMany */,
 				13034FB11F8FE7460040EA76 /* Products */,
 			);
@@ -60,6 +83,7 @@
 				13034FBA1F8FE7460040EA76 /* Assets.xcassets */,
 				13034FBC1F8FE7460040EA76 /* LaunchScreen.storyboard */,
 				13034FBF1F8FE7460040EA76 /* Info.plist */,
+				13034FC81F8FE8240040EA76 /* CoreDataManager.swift */,
 			);
 			path = CoreDataManyToMany;
 			sourceTree = "<group>";
@@ -138,6 +162,14 @@
 			files = (
 				13034FB61F8FE7460040EA76 /* ViewController.swift in Sources */,
 				13034FB41F8FE7460040EA76 /* AppDelegate.swift in Sources */,
+				13034FDF1F8FFD5C0040EA76 /* CFloor+CoreDataProperties.swift in Sources */,
+				13034FE11F8FFD5C0040EA76 /* CUnit+CoreDataProperties.swift in Sources */,
+				13034FE01F8FFD5C0040EA76 /* CUnit+CoreDataClass.swift in Sources */,
+				13034FDE1F8FFD5C0040EA76 /* CFloor+CoreDataClass.swift in Sources */,
+				13034FC91F8FE8240040EA76 /* CoreDataManager.swift in Sources */,
+				13034FC71F8FE78D0040EA76 /* MeasureDataModel.xcdatamodeld in Sources */,
+				13034FDC1F8FFD5C0040EA76 /* CBuilding+CoreDataClass.swift in Sources */,
+				13034FDD1F8FFD5C0040EA76 /* CBuilding+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,10 +309,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MWGTS2LLK;
 				INFOPLIST_FILE = CoreDataManyToMany/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.CoreDataManyToMany;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,10 +325,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3MWGTS2LLK;
 				INFOPLIST_FILE = CoreDataManyToMany/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jatin.CoreDataManyToMany;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -322,6 +356,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		13034FC51F8FE78D0040EA76 /* MeasureDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				13034FC61F8FE78D0040EA76 /* MeasureDataModel.xcdatamodel */,
+			);
+			currentVersion = 13034FC61F8FE78D0040EA76 /* MeasureDataModel.xcdatamodel */;
+			path = MeasureDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 13034FA81F8FE7460040EA76 /* Project object */;
 }
